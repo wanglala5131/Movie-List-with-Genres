@@ -1,0 +1,56 @@
+/*body*/
+.container-self {
+  width: 90%;
+  margin: 0 auto;
+}
+/*movie-list*/
+#movie-list {
+  
+  font-size: 20px;
+}
+#movie-list li {
+  border: 1px solid #eee;
+  border-bottom: 0px solid #eee;
+}
+#movie-list li:last-child {
+  border-bottom: 1px solid #eee;  /*最後一個不要有border*/
+}
+#movie-list li:hover {
+  background-color: #eee;
+}
+#movie-list .active {
+  background-color: blue;
+}
+#movie-list .active:hover {  /*避免被原本的hover影響*/
+  background-color: blue;
+}
+#movie-list .active a {
+  color: #fff;
+}
+/*card*/
+#movie-cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  margin: 0 auto;
+  width: 90%;
+}
+#movie-cards>p {
+  font-size: 30px;
+}
+.card {
+  margin: 10px;
+}
+.card-body {
+  padding: 15px;
+} 
+.card-body h5 {
+  margin-bottom: 15px;
+}
+.card-body span {
+  display: inline-block;
+  padding: 5px;
+  margin-bottom: 10px;
+  background-color: #f5f5f5;
+  font-size: 13px;
+}
