@@ -105,7 +105,6 @@
     for (let activeItem of movieList.children) {
       if (currentIndex === Number(activeItem.children[0].dataset.index)) {
         activeItem.classList.add('active')
-        console.log(activeItem)
       } else {
         activeItem.classList.remove('active')
       }
